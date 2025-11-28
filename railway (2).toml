@@ -1,0 +1,8 @@
+[deploy]
+build.command = "pip install -r requirements.txt"
+start.command = "python main.py"
+
+[environments]
+  [environments.production]
+    [environments.production.variables]
+    PORT = "8080"
