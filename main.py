@@ -474,7 +474,7 @@ class UniversalMusicBot:
                         chat_id=chat_id,
                         audio=audio_file,
                         title=(track.get('title') or 'Неизвестный трек')[:64],
-                        performer=(track.get('artist') или 'Неизвестный исполнитель')[:64],
+                        performer=(track.get('artist') or 'Неизвестный исполнитель')[:64],
                         caption=f"<span class='tg-spoiler'>🔴 <b>ЛЮДМИЛА - ЗЛАЯ ЖЕНЩИНА</b></span>\n\n"
                                f"🎵 <b>{track.get('title', 'Неизвестный трек')}</b>\n"
                                f"🎤 {track.get('artist', 'Неизвестный исполнитель')}\n"
